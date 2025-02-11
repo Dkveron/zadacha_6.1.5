@@ -1,0 +1,40 @@
+/* Заголовок */
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-top;
+  padding: 15px;
+  gap: 20px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__hidden-divider,
+.header__divider {
+  align-self: center;
+}
+
+.header__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header__menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+  .header {
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 1119px) {
+  .header {
+    padding-left: 30px;
+  }
+}

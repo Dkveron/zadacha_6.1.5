@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  opacity: 72.18%;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid $border-top;
+  padding: 20px;
+}
+
+@media (min-width: 760px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    opacity: 72.18%;
+    align-items: center;
+    .footer--left {
+      flex: 1;
+      text-align: left;
+    }
+
+    .footer--center {
+      flex: 2;
+      text-align: center;
+    }
+
+    .footer--right {
+      flex: 1;
+      text-align: right;
+    }
+  }
+}

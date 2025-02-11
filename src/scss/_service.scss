@@ -1,0 +1,93 @@
+.services {
+  margin: 0 auto;
+  width: 800px;
+  padding: 20px;
+}
+
+.service--border {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.services__table {
+  width: 100%;
+}
+
+.services__row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.services__row:last-child {
+  border-bottom: none;
+}
+
+.services__row--header {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #7e7e82;
+}
+
+.services__cell {
+  text-align: left;
+}
+
+.services__cell:first-child {
+  flex: 2; /* Название услуги занимает больше места */
+}
+
+.services__cell:nth-child(2),
+.services__cell:nth-child(3) {
+  flex: 0.7;
+  text-align: left; /* Теперь все цены и сроки выравнены влево */
+}
+
+.services__cell:last-child {
+  flex: 0.8;
+  text-align: right;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: $secondary-color;
+}
+
+@media (min-width: 760px) {
+  .services_mobile {
+    display: none;
+  }
+  .services--laptop {
+    display: block;
+    background-color: $primary-color;
+    p {
+      width: 421px;
+      height: 60px;
+      margin: 20px;
+      margin-bottom: 0;
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+    .get_offer {
+      margin: 30px 20px;
+      gap: 5px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+}

@@ -1,11 +1,11 @@
 document.querySelectorAll('.see_all').forEach((button) => {
-  const parentBlock = button.closest('.slider') // Находим родительский блок
-  const hide = button.querySelector('.hide') // Находим .hide внутри кнопки
-  const img = button.querySelector('img') // Находим изображение внутри кнопки
-  const hiddenElements = parentBlock.querySelectorAll('.slider__item--hidden') // Находим скрытые элементы
+  const parentBlock = button.closest('.slider')
+  const hide = button.querySelector('.hide')
+  const img = button.querySelector('img')
+  const hiddenElements = parentBlock.querySelectorAll('.slider__item--hidden')
 
   button.addEventListener('click', function () {
-    button.classList.toggle('active') // Переключаем класс активности
+    button.classList.toggle('active')
 
     if (button.classList.contains('active')) {
       hide.textContent = 'Скрыть'
